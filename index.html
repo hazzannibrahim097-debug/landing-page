@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scissor | Advanced URL Shortening Solution</title>
+  <meta name="description" content="Shorten, customize and track your links with Scissor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="home">
+    <nav class="nav container" aria-label="Main">
+      <a href="#home" class="logo" aria-label="Scissor home">
+        <svg class="logo__icon" viewBox="0 0 28 28" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true">
+          <path d="M11.5 16.5l-3.2 3.2a4.2 4.2 0 0 1-6-6l3.4-3.4a4.2 4.2 0 0 1 5.9-.1" transform="translate(1 1)"/>
+          <path d="M16.5 11.5l3.2-3.2a4.2 4.2 0 0 1 6 6l-3.4 3.4a4.2 4.2 0 0 1-5.9.1" transform="translate(-1 -1)"/>
+          <path d="M5 23L23 5" stroke-width="2.2"/>
+        </svg>
+        <span class="logo__bar"></span>
+        <span class="logo__text">SCISSOR</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__menu" id="navMenu">
+        <ul class="nav__links">
+          <li><a href="#home" class="is-active">My URLs</a></li>
+          <li class="has-dropdown">
+            <button class="nav__dd-btn" aria-expanded="false">
+              Features
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <ul class="dropdown">
+              <li><a href="#features">URL Shortening</a></li>
+              <li><a href="#features">Custom URLs</a></li>
+              <li><a href="#features">QR Codes</a></li>
+              <li><a href="#features">Data Analytics</a></li>
+            </ul>
+          </li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#analytics">Analytics</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="#" class="nav__login">Log in</a>
+          <a href="#trim" class="btn btn--primary btn--sm">Try for free</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero__body container">
+      <h1 class="hero__title">
+        <span class="hero__title-line">Optimize Your Online Experience with Our</span>
+        <span class="hero__title-line">Advanced
+          <span class="hl">URL Shortening
+            <svg class="hl__stroke" viewBox="0 0 160 14" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M3 9 C 40 3, 90 4, 156 2 C 110 8, 60 9, 6 12 Z" fill="currentColor"/>
+            </svg>
+          </span>
+          Solution
+        </span>
+      </h1>
+      <p class="hero__text">
+        Personalize your shortened URLs to align with your brand identity. Utilize custom slugs,
+        branded links, and domain customization options to reinforce your brand presence and
+        enhance user engagement.
+      </p>
+      <div class="hero__cta">
+        <a href="#trim" class="btn btn--primary">Sign Up</a>
+        <a href="#features" class="btn btn--link">Learn more</a>
+      </div>
+
+      <div class="hero__demo">
+        <span class="hero__demo-blob" aria-hidden="true"></span>
+        <div class="hero__card">
+          <div class="chain" aria-hidden="true">
+            <svg class="chain__long" viewBox="0 0 250 40" fill="none" stroke="#111" stroke-width="2">
+              <rect x="1" y="1" width="86" height="38" rx="19"/><path d="M26 20h36"/>
+              <rect x="82" y="1" width="86" height="38" rx="19"/><path d="M107 20h36"/>
+              <rect x="163" y="1" width="86" height="38" rx="19"/><path d="M188 20h36"/>
+            </svg>
+            <svg class="chain__arrow" viewBox="0 0 40 12" fill="#0057e7"><path d="M0 5h32V2l8 4-8 4V7H0z"/></svg>
+            <svg class="chain__short" viewBox="0 0 70 40" fill="none" stroke="#111" stroke-width="2">
+              <rect x="1" y="1" width="68" height="38" rx="19"/><path d="M20 20h30"/>
+            </svg>
+          </div>
+          <p class="hero__card-text">
+            Seamlessly transform your long URLs into <strong>concise</strong><br>
+            and <strong>shareable links</strong> with just few clicks.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="hero__shape" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main>
+    <!-- ============ STATS + WHY CHOOSE ============ -->
+    <section class="stats" id="analytics" aria-label="Scissor in numbers">
+      <div class="container stats__inner">
+        <h2 class="stats__title">One Stop.<br>Four <span class="blue">Possibilities</span>.</h2>
+        <dl class="stats__list">
+          <div><dt>3M</dt><dd>Active users</dd></div>
+          <div><dt>60M</dt><dd>Links &amp; QR<br>codes created</dd></div>
+          <div><dt>1B</dt><dd>Clicked &amp; Scanned<br>connections</dd></div>
+          <div><dt>300k</dt><dd>App Integrations</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container features__inner">
+        <div class="features__intro">
+          <h2 class="section-title section-title--left"><span class="bar"></span>Why choose <span class="blue">Scissors</span></h2>
+          <p>
+            Scissors is the hub of everything that has to do with your link management. We shorten your URLs,
+            allow you creating custom ones for your personal, business, event usage. Our swift QR code creation,
+            management and usage tracking with advance analytics for all of these is second to none.
+          </p>
+        </div>
+
+        <div class="features__grid">
+          <article class="feature">
+            <span class="feature__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0a1a2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+            </span>
+            <h3>URL Shortening</h3>
+            <p>Scissor allows you to shorten URLs of your business, events. Shorten your URL at scale, URL redirects.</p>
+          </article>
+          <article class="feature">
+            <span class="feature__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0a1a2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-6"/><path d="M17.5 2.5a2.1 2.1 0 0 1 3 3L12 14l-4 1 1-4z"/></svg>
+            </span>
+            <h3>Custom URLs</h3>
+            <p>With Scissor, you can create custom URLs, with the length you want! A solution for socials and businesses.</p>
+          </article>
+          <article class="feature">
+            <span class="feature__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0a1a2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="#0057e7"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="#0057e7"/></svg>
+            </span>
+            <h3>QR Codes</h3>
+            <p>Generate QR codes to your business, events. Bring your audience and customers to your doorstep with this scan and go solution.</p>
+          </article>
+          <article class="feature">
+            <span class="feature__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0057e7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </span>
+            <h3>Data Analytics</h3>
+            <p>Receive data on the usage of either your shortened URL, custom URLs or generated QR codes. Embedded to monitor progress.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section-title"><span class="bar"></span>A <span class="blue">price perfect</span> for your needs.</h2>
+        <p class="section-sub">From catering for your personal, business, event, socials needs, you can be rest assured we have you in mind in our pricing.</p>
+
+        <div class="plans">
+          <article class="plan plan--basic">
+            <h3 class="plan__name">Basic</h3>
+            <p class="plan__price">Free</p>
+            <p class="plan__desc">Free plan for all users</p>
+            <ul class="plan__list">
+              <li>Unlimited URL Shortening</li>
+              <li>Basic Link Analytics</li>
+              <li>Customizable Short Links</li>
+              <li>Standard Support</li>
+              <li>Ad-supported</li>
+            </ul>
+          </article>
+
+          <article class="plan plan--pro">
+            <h3 class="plan__name">Professional</h3>
+            <p class="plan__price">$15<span>/month</span></p>
+            <p class="plan__desc">Ideal for business creators</p>
+            <ul class="plan__list">
+              <li>Enhanced Link Analytics</li>
+              <li>Custom Branded Domains</li>
+              <li>Advanced Link Customization</li>
+              <li>Priority Support</li>
+              <li>Ad-free Experience</li>
+            </ul>
+          </article>
+
+          <article class="plan plan--teams">
+            <h3 class="plan__name">Teams</h3>
+            <p class="plan__price">$25<span>/month</span></p>
+            <p class="plan__desc">Share with up to 10 users</p>
+            <ul class="plan__list">
+              <li>Team Collaboration</li>
+              <li>User Roles and Permissions</li>
+              <li>Enhanced Security</li>
+              <li>API Access</li>
+              <li>Dedicated Account Manager</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="pricing__cta">
+          <a href="#" class="btn btn--outline">Get Custom Pricing</a>
+          <a href="#trim" class="btn btn--primary">Select Pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRIM URL ============ -->
+    <section class="trim dark-bg" id="trim" aria-label="Shorten a link">
+      <form class="trim__card" id="trimForm" novalidate>
+        <label class="sr-only" for="longUrl">Paste URL</label>
+        <input class="field field--lg" id="longUrl" type="url" placeholder="Paste URL here..." autocomplete="off" required>
+
+        <div class="trim__row">
+          <label class="sr-only" for="domain">Choose domain</label>
+          <div class="select">
+            <select class="field" id="domain">
+              <option value="" selected disabled>Choose Domain</option>
+              <option>scissor.link</option>
+              <option>scsr.io</option>
+              <option>trim.ly</option>
+            </select>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+          <label class="sr-only" for="alias">Alias</label>
+          <input class="field" id="alias" type="text" placeholder="Type Alias here" autocomplete="off">
+        </div>
+
+        <button class="btn btn--primary btn--block" type="submit">
+          Trim URL
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 21l11-11"/><path d="M15 3v3M13.5 4.5h3M20 8v3M18.5 9.5h3M9 3v2M8 4h2"/></svg>
+        </button>
+
+        <p class="trim__result" id="trimResult" role="status" aria-live="polite" hidden></p>
+
+        <p class="trim__legal">
+          By clicking TrimURL, I agree to the <a href="#"><strong>Terms of Service,</strong></a>
+          <a href="#"><strong>Privacy Policy</strong></a> and Use of Cookies.
+        </p>
+      </form>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq light-bg" id="faqs">
+      <div class="faq__inner">
+        <h2 class="section-title"><span class="bar"></span>FAQs</h2>
+        <div class="accordion" id="accordion">
+          <div class="acc is-open">
+            <h3><button class="acc__btn" aria-expanded="true" aria-controls="a1" id="q1">How does URL shortening work?<i aria-hidden="true"></i></button></h3>
+            <div class="acc__panel" id="a1" role="region" aria-labelledby="q1"><p>URL shortening works by taking a long URL and creating a shorter, condensed version that redirects to the original URL. When a user clicks on the shortened link, they are redirected to the intended destination.</p></div>
+          </div>
+          <div class="acc">
+            <h3><button class="acc__btn" aria-expanded="false" aria-controls="a2" id="q2">Is it necessary to create an account to use the URL shortening service?<i aria-hidden="true"></i></button></h3>
+            <div class="acc__panel" id="a2" role="region" aria-labelledby="q2"><p>You can shorten a link without an account, but creating one lets you manage, customize and track all your links in one place.</p></div>
+          </div>
+          <div class="acc">
+            <h3><button class="acc__btn" aria-expanded="false" aria-controls="a3" id="q3">Are the shortened links permanent? Will they expire?<i aria-hidden="true"></i></button></h3>
+            <div class="acc__panel" id="a3" role="region" aria-labelledby="q3"><p>Shortened links stay active for as long as your account is in good standing. Paid plans let you set your own expiry rules.</p></div>
+          </div>
+          <div class="acc">
+            <h3><button class="acc__btn" aria-expanded="false" aria-controls="a4" id="q4">Are there any limitations on the number of URLs I can shorten?<i aria-hidden="true"></i></button></h3>
+            <div class="acc__panel" id="a4" role="region" aria-labelledby="q4"><p>The Basic plan includes unlimited URL shortening. Higher plans add extra features such as branded domains and advanced analytics.</p></div>
+          </div>
+          <div class="acc">
+            <h3><button class="acc__btn" aria-expanded="false" aria-controls="a5" id="q5">Can I customize the shortened URLs to reflect my brand or content?<i aria-hidden="true"></i></button></h3>
+            <div class="acc__panel" id="a5" role="region" aria-labelledby="q5"><p>Yes. You can choose custom slugs, create branded links and connect your own domain to reinforce your brand identity.</p></div>
+          </div>
+          <div class="acc">
+            <h3><button class="acc__btn" aria-expanded="false" aria-controls="a6" id="q6">Can I track the performance of my shortened URLs?<i aria-hidden="true"></i></button></h3>
+            <div class="acc__panel" id="a6" role="region" aria-labelledby="q6"><p>Every link comes with analytics showing clicks and scans, and paid plans unlock deeper insights into your audience.</p></div>
+          </div>
+          <div class="acc">
+            <h3><button class="acc__btn" aria-expanded="false" aria-controls="a7" id="q7">How secure is the URL shortening service? Are the shortened links protected against spam or malicious activity?<i aria-hidden="true"></i></button></h3>
+            <div class="acc__panel" id="a7" role="region" aria-labelledby="q7"><p>Links are scanned for spam and malicious destinations, and we monitor for abuse so your audience can click with confidence.</p></div>
+          </div>
+          <div class="acc">
+            <h3><button class="acc__btn" aria-expanded="false" aria-controls="a8" id="q8">What is a QR code and what can it do?<i aria-hidden="true"></i></button></h3>
+            <div class="acc__panel" id="a8" role="region" aria-labelledby="q8"><p>A QR code is a scannable image that opens a link. Use it on print, packaging or events to bring people straight to your page.</p></div>
+          </div>
+          <div class="acc">
+            <h3><button class="acc__btn" aria-expanded="false" aria-controls="a9" id="q9">Is there an API available for integrating the URL shortening service into my own applications or websites?<i aria-hidden="true"></i></button></h3>
+            <div class="acc__panel" id="a9" role="region" aria-labelledby="q9"><p>Yes. API access is included with the Teams plan so you can build link shortening into your own apps and workflows.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="cta dark-bg" aria-label="Get started">
+      <h2>Revolutionizing Link Optimization</h2>
+      <a href="#trim" class="btn btn--primary">Get Started</a>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer light-bg">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="logo logo--dark" aria-label="Scissor home">
+          <svg class="logo__icon" viewBox="0 0 28 28" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true">
+            <path d="M11.5 16.5l-3.2 3.2a4.2 4.2 0 0 1-6-6l3.4-3.4a4.2 4.2 0 0 1 5.9-.1" transform="translate(1 1)"/>
+            <path d="M16.5 11.5l3.2-3.2a4.2 4.2 0 0 1 6 6l-3.4 3.4a4.2 4.2 0 0 1-5.9.1" transform="translate(-1 -1)"/>
+            <path d="M5 23L23 5" stroke-width="2.2"/>
+          </svg>
+          <span class="logo__bar"></span>
+          <span class="logo__text">SCISSOR</span>
+        </a>
+        <ul class="social">
+          <li><a href="#" aria-label="Twitter"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.7.3-1.5.5-2.4.6.9-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7C8.4 8.7 5.4 7 3.4 4.5c-1.1 1.9-.5 4.2 1.2 5.5-.7 0-1.3-.2-1.9-.5 0 2 1.4 3.7 3.3 4.1-.6.2-1.2.2-1.9.1.5 1.6 2 2.8 3.8 2.9A8.3 8.3 0 0 1 2 18.4 11.7 11.7 0 0 0 8.3 20c7.6 0 11.8-6.4 11.5-12.1.8-.6 1.5-1.3 2.2-2z"/></svg></a></li>
+          <li><a href="#" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a></li>
+          <li><a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.3 18H5.7V9.7h2.6V18zM7 8.6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM18.3 18h-2.6v-4c0-1 0-2.2-1.4-2.2s-1.6 1.1-1.6 2.1V18h-2.6V9.7h2.5v1.1c.4-.7 1.2-1.3 2.5-1.3 2.6 0 3.1 1.7 3.1 4V18z"/></svg></a></li>
+          <li><a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.6v-7h-2.4v-2.8h2.4V9.2c0-2.4 1.5-3.7 3.6-3.7l2.1.1v2.5h-1.4c-1.2 0-1.4.6-1.4 1.4v1.8h2.8l-.4 2.8h-2.4v7H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"/></svg></a></li>
+        </ul>
+      </div>
+
+      <nav class="footer__cols" aria-label="Footer">
+        <div class="fcol">
+          <h4>Why Scissor ?</h4>
+          <ul><li><a href="#">Scissor 101</a></li><li><a href="#">Integrations &amp; API</a></li><li><a href="#pricing">Pricing</a></li></ul>
+        </div>
+        <div class="fcol">
+          <h4>Solutions</h4>
+          <ul><li><a href="#">Social Media</a></li><li><a href="#">Digital Marketing</a></li><li><a href="#">Customer Service</a></li><li><a href="#">For Developers</a></li></ul>
+        </div>
+        <div class="fcol">
+          <h4>Products</h4>
+          <ul><li><a href="#">Link Management</a></li><li><a href="#">QR Codes</a></li><li><a href="#">Link-in-bio</a></li></ul>
+        </div>
+        <div class="fcol">
+          <h4>Company</h4>
+          <ul><li><a href="#">About Scissor</a></li><li><a href="#">Careers</a></li><li><a href="#">Partners</a></li><li><a href="#">Press</a></li><li><a href="#">Contact</a></li><li><a href="#">Reviews</a></li></ul>
+        </div>
+        <div class="fcol">
+          <h4>Resources</h4>
+          <ul><li><a href="#">Blog</a></li><li><a href="#">Resource Library</a></li><li><a href="#">Developers</a></li><li><a href="#">App Connectors</a></li><li><a href="#">Support</a></li><li><a href="#">Trust Center</a></li><li><a href="#">Browser Extension</a></li><li><a href="#">Mobile App</a></li></ul>
+        </div>
+        <div class="fcol">
+          <h4>Features</h4>
+          <ul><li><a href="#">Branded Links</a></li><li><a href="#">Mobile Links</a></li><li><a href="#">Campaign Management &amp; Analytics</a></li><li><a href="#">QR Code generation</a></li></ul>
+        </div>
+        <div class="fcol">
+          <h4>Legal</h4>
+          <ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Cookie Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Acceptable Use Policy</a></li><li><a href="#">Code of Conduct</a></li></ul>
+        </div>
+      </nav>
+
+      <p class="footer__copy"><a href="#">Term of Service</a><span>|</span><a href="#">Security</a><span>|</span><span class="footer__year">Scissor 2023</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
